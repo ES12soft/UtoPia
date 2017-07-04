@@ -1,0 +1,14 @@
+diff a/UTOPIA/Library/CurrentLayout.dwlt b/UTOPIA/Library/CurrentLayout.dwlt	(rejected hunks)
+@@ -321,9 +321,9 @@
+     height: 1047
+   m_TreeViewState:
+     scrollPos: {x: 0, y: 0}
+-    m_SelectedIDs: 2a250000
+-    m_LastClickedID: 9514
+-    m_ExpandedIDs: e4fbffffe6fbffff00000000
++    m_SelectedIDs: ac250000
++    m_LastClickedID: 9644
++    m_ExpandedIDs: e4fbffffe6fbffff00000000b6250000c0250000ea250000f2250000
+     m_RenameOverlay:
+       m_UserAcceptedRename: 0
+       m_Name: 
