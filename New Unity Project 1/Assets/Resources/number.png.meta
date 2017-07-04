@@ -1,0 +1,300 @@
+fileFormatVersion: 2
+guid: 14d3938d337b8604ea3ed310fbeb30cc
+timeCreated: 1499143347
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: number-gold-1_0
+    21300002: number-gold-1_1
+    21300004: number-gold-1_2
+    21300006: number-gold-1_3
+    21300008: number-gold-1_4
+    21300010: number-gold-1_5
+    21300012: number-gold-1_6
+    21300014: number-gold-1_7
+    21300016: number-gold-1_8
+    21300018: number-gold-1_9
+  serializedVersion: 4
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: -1
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  - buildTarget: Standalone
+    maxTextureSize: 2048
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: number-gold-1_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 14
+        width: 69
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: number-gold-1_1
+      rect:
+        serializedVersion: 2
+        x: 85
+        y: 16
+        width: 37
+        height: 74
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: number-gold-1_2
+      rect:
+        serializedVersion: 2
+        x: 148
+        y: 14
+        width: 61
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: number-gold-1_3
+      rect:
+        serializedVersion: 2
+        x: 222
+        y: 14
+        width: 57
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: number-gold-1_4
+      rect:
+        serializedVersion: 2
+        x: 290
+        y: 15
+        width: 64
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: number-gold-1_5
+      rect:
+        serializedVersion: 2
+        x: 365
+        y: 14
+        width: 58
+        height: 74
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: number-gold-1_6
+      rect:
+        serializedVersion: 2
+        x: 435
+        y: 14
+        width: 63
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: number-gold-1_7
+      rect:
+        serializedVersion: 2
+        x: 509
+        y: 14
+        width: 57
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: number-gold-1_8
+      rect:
+        serializedVersion: 2
+        x: 581
+        y: 14
+        width: 58
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: number-gold-1_9
+      rect:
+        serializedVersion: 2
+        x: 650
+        y: 14
+        width: 63
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    outline:
+    - - {x: -354, y: 43.5}
+      - {x: -364, y: 36.5}
+      - {x: -364, y: -24.5}
+      - {x: -361, y: -35.5}
+      - {x: -309, y: -35.5}
+      - {x: -293, y: -21.5}
+      - {x: -293, y: 24.5}
+      - {x: -300, y: 43.5}
+    - - {x: -163, y: 43.5}
+      - {x: -213, y: 43.5}
+      - {x: -218, y: 42.5}
+      - {x: -218, y: 10.5}
+      - {x: -217, y: 9.5}
+      - {x: -213, y: 7.5}
+      - {x: -204, y: 7.5}
+      - {x: -217, y: -4.5}
+      - {x: -218, y: -6.5}
+      - {x: -218, y: -28.5}
+      - {x: -214, y: -35.5}
+      - {x: -155, y: -35.5}
+      - {x: -153, y: -34.5}
+      - {x: -153, y: 13.5}
+      - {x: -155, y: 33.5}
+    - - {x: -103, y: 43.5}
+      - {x: -140, y: 43.5}
+      - {x: -144, y: 39.5}
+      - {x: -144, y: -32.5}
+      - {x: -134, y: -35.5}
+      - {x: -97, y: -35.5}
+      - {x: -83, y: -31.5}
+      - {x: -83, y: 32.5}
+      - {x: -89, y: 41.5}
+    - - {x: 5, y: 42.5}
+      - {x: -1, y: 26.5}
+      - {x: -1, y: -35.5}
+      - {x: 47, y: -35.5}
+      - {x: 61, y: -31.5}
+      - {x: 61, y: 39.5}
+      - {x: 52, y: 42.5}
+    - - {x: 73, y: 43.5}
+      - {x: 69, y: 27.5}
+      - {x: 69, y: -34.5}
+      - {x: 70, y: -35.5}
+      - {x: 136, y: -35.5}
+      - {x: 136, y: 43.5}
+    - - {x: 147, y: 43.5}
+      - {x: 144, y: 41.5}
+      - {x: 143, y: 38.5}
+      - {x: 143, y: -34.5}
+      - {x: 144, y: -35.5}
+      - {x: 197, y: -35.5}
+      - {x: 204, y: 5.5}
+      - {x: 204, y: 42.5}
+      - {x: 197, y: 43.5}
+    - - {x: 230, y: 43.5}
+      - {x: 215, y: 39.5}
+      - {x: 215, y: -32.5}
+      - {x: 225, y: -35.5}
+      - {x: 273, y: -35.5}
+      - {x: 277, y: -28.5}
+      - {x: 277, y: 33.5}
+      - {x: 264, y: 43.5}
+    - - {x: 290, y: 43.5}
+      - {x: 284, y: 41.5}
+      - {x: 284, y: -8.5}
+      - {x: 289, y: -35.5}
+      - {x: 326, y: -35.5}
+      - {x: 351, y: -21.5}
+      - {x: 351, y: 35.5}
+      - {x: 341, y: 43.5}
+    - - {x: -76, y: -31.5}
+      - {x: -70, y: -34.5}
+      - {x: -18, y: -34.5}
+      - {x: -8, y: -30.5}
+      - {x: -8, y: 32.5}
+      - {x: -11, y: 44.5}
+      - {x: -57, y: 44.5}
+      - {x: -76, y: 6.5}
+    - - {x: -267, y: 44.5}
+      - {x: -281, y: 37.5}
+      - {x: -281, y: -15.5}
+      - {x: -280, y: -33.5}
+      - {x: -240, y: -33.5}
+      - {x: -240, y: 44.5}
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
