@@ -7,6 +7,7 @@ public class InputManager : MonoBehaviour
     private GameObject draggedObject;           // 드래그되고있는 객체의 참조를 보관,유지
     private Vector2 touchOffset;                // 잡고난 후 플레이어의 터치위치
 
+    public GameObject C;
 
     void Update()
     {
@@ -20,7 +21,10 @@ public class InputManager : MonoBehaviour
         else
         {
             if (draggingItem)
+            {
                 DropItem();
+                RayCollision();
+            }
         }
     }
 
@@ -62,7 +66,7 @@ public class InputManager : MonoBehaviour
                     draggingItem = true;
                     draggedObject = hit.transform.gameObject;
                     touchOffset = (Vector2)hit.transform.position - inputPosition;          // 처음위치에 상대적으로 움직임
-                    draggedObject.transform.localScale = new Vector3(1.5f, 1.5f, 1.5f);     // 드래그 중일때 오브젝트 확대
+                    draggedObject.transform.localScale = new Vector3(1.3f, 1.3f, 1.3f);     // 드래그 중일때 오브젝트 확대
                 }
             }
         }
@@ -84,6 +88,32 @@ public class InputManager : MonoBehaviour
     {
         draggingItem = false;
         draggedObject.transform.localScale = new Vector3(1, 1, 1);         // 드래그가 끝났으니 원래대로 스케일 변경
+    }
+
+    void RayCollision()
+    {
+
+        RaycastHit2D[] touches = Physics2D.RaycastAll(CurrentTouchPosition, CurrentTouchPosition, 0.5f);
+        Transform CheckTag = Physics2D.Raycast(CurrentTouchPosition, CurrentTouchPosition, 0.5f).transform;
+
+        if (touches.Length > 1)
+        {
+            var obj = touches[0];
+            var hit = touches[1];
+
+            if (obj.transform.tag == "A" && hit.transform.tag == "B")
+            {
+                Debug.Log("오브젝트 접촉완료");
+
+                C.transform.position = hit.transform.position;
+                Destroy(obj.collider.gameObject);
+                Destroy(hit.collider.gameObject);
+                C.SetActive(true);
+                
+            }
+      
+        }
+
     }
 
     public void PrologueStart()
