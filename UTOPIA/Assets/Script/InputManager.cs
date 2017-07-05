@@ -85,4 +85,9 @@ public class InputManager : MonoBehaviour
         draggingItem = false;
         draggedObject.transform.localScale = new Vector3(1, 1, 1);         // 드래그가 끝났으니 원래대로 스케일 변경
     }
+
+    public void PrologueStart()
+    {
+        UnityEngine.SceneManagement.SceneManager.LoadScene("Prologue");
+    }
 }
