@@ -1,7 +1,0 @@
-sceneSetups:
-- path: Assets/Scene/Main.unity
-  isLoaded: 1
-  isActive: 1
-- path: Assets/Scene/Prologue.unity
-  isLoaded: 0
-  isActive: 0

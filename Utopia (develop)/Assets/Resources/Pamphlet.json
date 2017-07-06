@@ -1,0 +1,70 @@
+{
+  "dialogues": [
+    {
+      "characterType":0,
+      "character_name":"알렉스",
+      "standImage_Name":"Hero_Default",
+      "script_Text":"이건... 팜플렛인가?"
+    },
+    {
+      "characterType":0,
+      "character_name":"",
+      "standImage_Name":"Nothing",
+      "script_Text":"안녕하세요. 이곳은 낙원."
+    },
+    {
+      "characterType":0,
+      "character_name":"",
+      "standImage_Name":"Nothing",
+      "script_Text":"언제나 여러분 곁에 있는 동반자 (주)낙원입니다."
+    },
+    {
+      "characterType":0,
+      "character_name":"",
+      "standImage_Name":"Nothing",
+      "script_Text":"어느날 갑자기 훌쩍 아무도 모르는 곳으로 떠나고 싶지 않으십니까?"
+    },
+    {
+      "characterType":0,
+      "character_name":"",
+      "standImage_Name":"Nothing",
+      "script_Text":"이제는 볼 수 없는 소중한 사람과 다시한번 만나고 싶지 않으십니까?"
+    },
+    {
+      "characterType":0,
+      "character_name":"",
+      "standImage_Name":"Nothing",
+      "script_Text":"(주)낙원은 그런 당신이 바라는 모든 것을 이루어 드립니다."
+    },
+    {
+      "characterType":0,
+      "character_name":"",
+      "standImage_Name":"Nothing",
+      "script_Text":"자사가 개발한 전뇌기계 'ANGEL'과 함께라면 당신은 무엇이든 될 수있고, 무엇이든 이룰 수 있습니다!"
+    },
+    {
+      "characterType":0,
+      "character_name":"",
+      "standImage_Name":"Nothing",
+      "script_Text":"그 놀라운 기적을 지금, 느껴보시기 바랍니다."
+    },
+    {
+      "characterType":0,
+      "character_name":"",
+      "standImage_Name":"Nothing",
+      "script_Text":"(주)낙원은 언제나 고객 여러분의 성원에 힘입어 최고의 연구진과 최고의 서비스로 보답하겠습니다."
+    },
+    {
+      "characterType":0,
+      "character_name":"알렉스",
+      "standImage_Name":"Hero_Surprised",
+      "script_Text":"동반자? 동반자는 무슨 지랄하고 자빠졌네. 연고없는 사람 데려다가 불법 실험이나 하는 놈들이..."
+    },
+    {
+      "characterType":0,
+      "character_name":"알렉스",
+      "standImage_Name":"Hero_Default",
+      "script_Text":"하여간 돈 많은 놈들이 더해요. 이따위 시설 만들 돈으로 내 인센티브나 더 얹어달라고."
+    }
+  ]
+}
