@@ -1,0 +1,47 @@
+{
+  "dialogues": [
+    {
+      "characterType":0,
+      "character_name":"알렉스",
+      "standImage_Name":"Hero_Surprised",
+      "script_Text":"이건... 지도인가?"
+    },
+
+    {
+      "characterType":0,
+      "character_name":"알렉스",
+      "standImage_Name":"Hero_Default",
+      "script_Text":"운이 좋았군. 처음방에서 지도를 발견하다니."
+    },
+    {
+      "characterType":0,
+      "character_name":"알렉스",
+      "standImage_Name":"Hero_Default",
+      "script_Text":"좋아. 이걸로 좀 더 수월하게 그 녀석을... 응?"
+    },
+    {
+      "characterType":0,
+      "character_name":"알렉스",
+      "standImage_Name":"Hero_Surprised",
+      "script_Text":"...뭐야 이거? 5층밖에 표시가 안되잖아?"
+    },
+    {
+      "characterType":0,
+      "character_name":"알렉스",
+      "standImage_Name":"Hero_Default",
+      "script_Text":"망할, 윗층은 뭐가 있는지 모르는 건가... 층 별로 업데이트 되는 방식인가 보군."
+    },
+    {
+      "characterType":0,
+      "character_name":"알렉스",
+      "standImage_Name":"Hero_Default",
+      "script_Text":"뭐... 이걸로도 어디야. 일단 당장 필요한 5층의 지도는 있으니까."
+    },
+    {
+      "characterType":0,
+      "character_name":"알렉스",
+      "standImage_Name":"Hero_Default",
+      "script_Text":"최대한 서둘러야겠군."
+    }
+  ]
+}
