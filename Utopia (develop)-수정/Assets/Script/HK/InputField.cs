@@ -1,71 +1,72 @@
-﻿//using System.Collections;
-//using System.Collections.Generic;
-//using UnityEngine;
-//using UnityEngine.UI;
+﻿using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+using UnityEngine.UI;
 
-//public class InputField : MonoBehaviour
-//{
-    
-//    InputField field;
-//    int stage = 0;
+public class InputField : MonoBehaviour
+{
 
-//    // Use this for initialization
-//    void Start()
-//    {
-//        GameObject inputObj = this.transform.Find("InputField").gameObject;
+    InputField field;
+    int stage = 0;
 
-//        field = inputObj.GetComponent<InputField>();
+    // Use this for initialization
+    void Start()
+    {
+        GameObject inputObj = this.transform.Find("InputField").gameObject;
 
-//        field.onValidateInput += delegate (string text, int charIndex, char addedChar) {
-//            return changeUpperCase(addedChar);
-//        };
-//    }
+        field = inputObj.GetComponent<InputField>();
 
-//    // Update is called once per frame
-//    void Update()
-//    {
-//        // 이건 스위치문으로 패스워드를 가려내면 될듯!
-//        if (field.text == "003")
-//        {
-//            Debug.Log("성공");
-//        }
-//    }
+        field.onValidateInput += delegate (string text, int charIndex, char addedChar)
+        {
+            return changeUpperCase(addedChar);
+        };
+    }
 
-//    char changeUpperCase(char _cha)
-//    {
-//        char tmpChar = _cha;
+    // Update is called once per frame
+    void Update()
+    {
+        // 이건 스위치문으로 패스워드를 가려내면 될듯!
+        if (field.text == "003")
+        {
+            Debug.Log("성공");
+        }
+    }
 
-//        string tmpString = tmpChar.ToString();
+    char changeUpperCase(char _cha)
+    {
+        char tmpChar = _cha;
 
-//        tmpString = tmpString.ToUpper();
+        string tmpString = tmpChar.ToString();
 
-//        tmpChar = System.Convert.ToChar(tmpString);
+        tmpString = tmpString.ToUpper();
 
-//        return tmpChar;
-//    }
+        tmpChar = System.Convert.ToChar(tmpString);
 
-//    void textCode(string text)
-//    {
-//        switch (text)
-//        {
-//            case "003":
-//                stage = 1;
-//                break;
-//            default:
-//                break;
-//        }
-//    }
+        return tmpChar;
+    }
 
-//    public void StageChange()
-//    {
-//        switch (stage)
-//        {
-//            case 1:
-//                // 다른 것은 모두 닫고
-//                // 스테이지 1만 보여준다!
-//                break;
-//            default:
-//                break;
-//        }
-//    }
-//}
+    void textCode(string text)
+    {
+        switch (text)
+        {
+            case "003":
+                stage = 1;
+                break;
+            default:
+                break;
+        }
+    }
+
+    public void StageChange()
+    {
+        switch (stage)
+        {
+            case 1:
+                // 다른 것은 모두 닫고
+                // 스테이지 1만 보여준다!
+                break;
+            default:
+                break;
+        }
+    }
+}
