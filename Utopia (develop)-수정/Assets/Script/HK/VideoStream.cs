@@ -11,27 +11,32 @@ public class VideoStream : MonoBehaviour {
     private VideoPlayer videoPlayer;
     private VideoSource videoSource;
 
-    
 
-	
+
+
     void Start()
     {
         videoPlayer = gameObject.GetComponent<VideoPlayer>();
 
         videoPlayer.Play();
 
-        
+
     }
 
     void Update()
     {
         if (!videoPlayer.isPlaying)
         {
-            if (videoPlayer.transform.name == "TitleVideo")
-                UnityEngine.SceneManagement.SceneManager.LoadScene("B5");
+            if (videoPlayer.transform.name == "PrologueVideo")
+            {
+                UnityEngine.SceneManagement.SceneManager.LoadScene("Main");
+                PlayerPrefs.SetInt("StartMain", 1);
+            }
 
-            if (videoPlayer.transform.name == "EndVideo")
-                Application.Quit();
+            ///if (videoPlayer.transform.name == "EndVideo")
+            ///    Application.Quit();
         }
     }
+
+
 }

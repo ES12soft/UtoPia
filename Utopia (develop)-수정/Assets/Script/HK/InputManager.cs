@@ -10,9 +10,9 @@ public class InputManager : MonoBehaviour
     private GameObject draggedObject;           // 드래그되고있는 객체의 참조를 보관,유지
     private Vector2 touchOffset;                // 잡고난 후 플레이어의 터치위치
     public GameObject Inventory;
- //   public AudioSource audioSource;
+    //   public AudioSource audioSource;
 
-    bool Interaction = false; 
+    //bool Interaction = false;
 
     void Update()
     {
@@ -32,8 +32,8 @@ public class InputManager : MonoBehaviour
             }
         }
 
-   //     if (!audioSource.isPlaying && Interaction)
-     //       UnityEngine.SceneManagement.SceneManager.LoadScene("End");
+        //     if (!audioSource.isPlaying && Interaction)
+        //       UnityEngine.SceneManagement.SceneManager.LoadScene("End");
     }
 
 
@@ -133,7 +133,7 @@ public class InputManager : MonoBehaviour
                 hit.transform.GetComponent<AudioSource>().Play();
                 Debug.Log("오브젝트 접촉완료");
 
-                Interaction = true;
+                //Interaction = true;
                 Destroy(obj.collider.gameObject);
 
                 //if (hit.transform.GetComponent<AudioSource>().isPlaying)

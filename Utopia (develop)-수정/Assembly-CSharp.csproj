@@ -51,6 +51,7 @@
      <Compile Include="Assets\Script\HK\HintManager.cs" />
      <Compile Include="Assets\Script\HK\InputManager.cs" />
      <Compile Include="Assets\Script\HK\Inventory.cs" />
+     <Compile Include="Assets\Script\HK\MainScript.cs" />
      <Compile Include="Assets\Script\HK\MouseCursor.cs" />
      <Compile Include="Assets\Script\HK\UIManager.cs" />
      <Compile Include="Assets\Script\HK\VideoStream.cs" />
