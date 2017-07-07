@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class InputField : MonoBehaviour
+public class InputFieldManager : MonoBehaviour
 {
 
     InputField field;
@@ -12,12 +12,12 @@ public class InputField : MonoBehaviour
     // Use this for initialization
     void Start()
     {
-        GameObject inputObj = this.transform.Find("InputField").gameObject;
+
+        GameObject inputObj = GameObject.Find("InputField");
 
         field = inputObj.GetComponent<InputField>();
 
-        field.onValidateInput += delegate (string text, int charIndex, char addedChar)
-        {
+        field.onValidateInput += delegate (string text, int charIndex, char addedChar) {
             return changeUpperCase(addedChar);
         };
     }
