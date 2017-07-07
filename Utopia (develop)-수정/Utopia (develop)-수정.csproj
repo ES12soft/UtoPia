@@ -96,6 +96,7 @@
     <Compile Include="Assets\Script\JY\ActiveDialogue.cs" />
     <Compile Include="Assets\Script\JY\ControlDialogue.cs" />
     <Compile Include="Assets\Script\SB\CameraFollow.cs" />
+    <Compile Include="Assets\Script\SB\MazePlayerMovement.cs" />
     <Compile Include="Assets\Script\SB\NewBehaviourScript.cs" />
     <Compile Include="Assets\Script\SB\PlayerControl.cs" />
     <Compile Include="Assets\Script\SB\ScreenFader.cs" />
