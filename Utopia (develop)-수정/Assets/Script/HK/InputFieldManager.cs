@@ -17,16 +17,18 @@ public class InputFieldManager : MonoBehaviour
 
         field = inputObj.GetComponent<InputField>();
 
+<<<<<<< HEAD
 // HEAD:Utopia (develop)-수정/Assets/Script/HK/InputField.cs
         /*
-        field.onValidateInput += delegate (string text, int charIndex, char addedChar)
-        {
 =======
-        field.onValidateInput += delegate (string text, int charIndex, char addedChar) {
->>>>>>> 368e95a39f11d4c4690a3518501779e2f02548d6:Utopia (develop)-수정/Assets/Script/HK/InputFieldManager.cs
+        
+
+>>>>>>> 8b6e4ae0c7cc56f4b8d7f454082354e72f2f123d
+        field.onValidateInput += delegate (string text, int charIndex, char addedChar)
+        { 
             return changeUpperCase(addedChar);
         };
-        */
+        
     }
 
     // Update is called once per frame
@@ -39,6 +41,7 @@ public class InputFieldManager : MonoBehaviour
             Debug.Log("성공");
         }
         */
+        textCode(field.text);
     }
 
     char changeUpperCase(char _cha)
@@ -60,6 +63,7 @@ public class InputFieldManager : MonoBehaviour
         {
             case "003":
                 stage = 1;
+                Debug.Log("성공");
                 break;
             default:
                 break;
