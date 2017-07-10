@@ -20,24 +20,27 @@ public class MazePlayerMovement : MonoBehaviour {
 
     }
 
-    /*
+    
     void OnCollisionEnter2D(Collision2D other)
     {
         if (other.transform.tag == "MazeMap")
         {
+
             Debug.Log("충도르");
-            IsMoving = false;
+            //IsMoving = false;
         }
         // 만약 트리거 상태의 오브젝트와 충돌했을때
         
+        /*
         if (other.transform.tag == "room1_door")
         {
             transform.localPosition = new Vector3(20, -1, 0);
         }
+        */
         
         //만약 트리거 상태의 오브젝트와 충돌하고 충돌한 물체의 태그가 player일때 괄호안내용을 실행한다.
     }
-    */
+    
 
     void Move()
     {

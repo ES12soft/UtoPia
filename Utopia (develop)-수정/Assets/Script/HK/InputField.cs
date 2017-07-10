@@ -16,20 +16,24 @@ public class InputField : MonoBehaviour
 
         field = inputObj.GetComponent<InputField>();
 
+        /*
         field.onValidateInput += delegate (string text, int charIndex, char addedChar)
         {
             return changeUpperCase(addedChar);
         };
+        */
     }
 
     // Update is called once per frame
     void Update()
     {
         // 이건 스위치문으로 패스워드를 가려내면 될듯!
+        /*
         if (field.text == "003")
         {
             Debug.Log("성공");
         }
+        */
     }
 
     char changeUpperCase(char _cha)
