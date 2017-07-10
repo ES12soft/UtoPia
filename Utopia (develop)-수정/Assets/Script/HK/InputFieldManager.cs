@@ -17,7 +17,6 @@ public class InputFieldManager : MonoBehaviour
         GameObject inputObj = GameObject.Find("InputField");
 
         field = inputObj.GetComponent<InputField>();
-
         
 
         field.onValidateInput += delegate (string text, int charIndex, char addedChar)

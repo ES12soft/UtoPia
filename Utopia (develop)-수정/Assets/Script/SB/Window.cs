@@ -7,9 +7,10 @@ public class Window : MonoBehaviour {
     public GameObject CleanWindow;
     public GameObject DarkWindow;
     public GameObject CurtainClose;
+    public GameObject StarPowder;
     //창문 상태 : 1.비오는날, 2.맑은날, 3.커튼을 걷음(밤)
     public int Window_State = 1;
-    //커튼 상태 : 1.열려있음, 2.닫혀있음
+    //커튼 상태 : 1.닫혀있음, 2.열려있음
     public int Curtain_State = 1;
     public void Window_State_Change()
     {
@@ -60,9 +61,11 @@ public class Window : MonoBehaviour {
         {
             case 1:
                 CurtainClose.SetActive(true);
+                StarPowder.SetActive(true);
                 break;
             case 2:
                 CurtainClose.SetActive(false);
+                StarPowder.SetActive(false);
                 break;
         }
     }
