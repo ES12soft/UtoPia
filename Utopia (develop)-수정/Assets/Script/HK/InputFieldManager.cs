@@ -8,6 +8,7 @@ public class InputFieldManager : MonoBehaviour
 
     InputField field;
     int stage = 0;
+    public GameObject Stage1;
 
     // Use this for initialization
     void Start()
@@ -54,11 +55,14 @@ public class InputFieldManager : MonoBehaviour
 
     void textCode(string text)
     {
+        stage = 0;
+
         switch (text)
         {
             case "003":
                 stage = 1;
-                Debug.Log("성공");
+                //Debug.Log("성공");
+                //Chk_code = true;
                 break;
             default:
                 break;
@@ -70,8 +74,8 @@ public class InputFieldManager : MonoBehaviour
         switch (stage)
         {
             case 1:
-                // 다른 것은 모두 닫고
-                // 스테이지 1만 보여준다!
+                this.gameObject.SetActive(false);
+                Stage1.SetActive(true);
                 break;
             default:
                 break;

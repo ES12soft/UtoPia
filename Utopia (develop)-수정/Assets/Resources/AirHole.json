@@ -1,10 +1,11 @@
-{
+﻿{
   "dialogues": [
     {
-      "characterType":0,
-      "character_name":"",
-      "standImage_Name":"Nothing",
-      "script_Text":"환풍구다. 여기로 들어가는건 무리인것 같다."
+      "Item_Number":0,
+      "Item_Name":"Letter",
+      "Item_Place":"Main",
+      "Item_Image":"Nothing",
+      "Item_Text":"연구자의 시체에서 발견한 편지"
     }
   ]
 }

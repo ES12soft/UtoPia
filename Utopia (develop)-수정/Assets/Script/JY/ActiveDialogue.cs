@@ -23,13 +23,9 @@ public class ActiveDialogue : MonoBehaviour
 	void Start () {
         control = FindObjectOfType<ControlDialogue>();
 
-        //data = File.ReadAllText(Application.dataPath + "/Resources/"+EventName+".json");
         data = Resources.Load<TextAsset>(EventName);
         ConvertedData = JsonMapper.ToObject(data.text);//Json 객체로 변환
 
-        //ConvertedData = JsonMapper.ToObject(data);//Json 객체로 변환
-       
-        //Debug.Log(ConvertedData["dialogues"].Count);
     }
 
     // Update is called once per frame
