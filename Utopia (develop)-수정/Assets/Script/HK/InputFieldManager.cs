@@ -16,14 +16,8 @@ public class InputFieldManager : MonoBehaviour
         GameObject inputObj = GameObject.Find("InputField");
 
         field = inputObj.GetComponent<InputField>();
-
-<<<<<<< HEAD
-// HEAD:Utopia (develop)-수정/Assets/Script/HK/InputField.cs
-        /*
-=======
         
 
->>>>>>> 8b6e4ae0c7cc56f4b8d7f454082354e72f2f123d
         field.onValidateInput += delegate (string text, int charIndex, char addedChar)
         { 
             return changeUpperCase(addedChar);
