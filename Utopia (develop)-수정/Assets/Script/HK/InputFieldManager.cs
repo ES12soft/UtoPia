@@ -17,7 +17,7 @@ public class InputFieldManager : MonoBehaviour
 
         field = inputObj.GetComponent<InputField>();
 
-<<<<<<< HEAD:Utopia (develop)-수정/Assets/Script/HK/InputField.cs
+// HEAD:Utopia (develop)-수정/Assets/Script/HK/InputField.cs
         /*
         field.onValidateInput += delegate (string text, int charIndex, char addedChar)
         {
