@@ -91,7 +91,7 @@ MonoBehaviour:
   m_MinSize: {x: 917, y: 442}
   m_MaxSize: {x: 22012, y: 10021}
   vertical: 0
-  controlID: 807
+  controlID: 241
 --- !u!114 &5
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -135,7 +135,7 @@ MonoBehaviour:
   m_MinSize: {x: 202, y: 442}
   m_MaxSize: {x: 4002, y: 8042}
   vertical: 1
-  controlID: 616
+  controlID: 176
 --- !u!114 &7
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -289,9 +289,9 @@ MonoBehaviour:
     height: 1047
   m_TreeViewState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 30060000
-    m_LastClickedID: 0
-    m_ExpandedIDs: defbffff00000000
+    m_SelectedIDs: 502b0000
+    m_LastClickedID: 11088
+    m_ExpandedIDs: 22fbffff00000000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -340,7 +340,7 @@ MonoBehaviour:
     y: 91
     width: 427
     height: 1047
-  m_ScrollPosition: {x: 0, y: 82.95508}
+  m_ScrollPosition: {x: 0, y: 0}
   m_InspectorMode: 0
   m_PreviewResizer:
     m_CachedPref: -160
@@ -384,19 +384,19 @@ MonoBehaviour:
     m_ShowAllHits: 0
     m_SearchArea: 0
     m_Folders:
-    - Assets/Script/HK
+    - Assets
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/Script/HK
+  - Assets
   m_LastFoldersGridSize: -1
   m_LastProjectPath: "C:\\Users\\B408-12\\Desktop\\Soft\\Utopia (develop)-\uC218\uC815"
   m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 0a260000
-    m_LastClickedID: 9738
-    m_ExpandedIDs: 0000000032250000f025000088260000a626000038270000ec290000ee29000000ca9a3bffffff7f
+    m_SelectedIDs: 2a270000
+    m_LastClickedID: 10026
+    m_ExpandedIDs: 000000002a270000f027000088280000a62800004029000056290000062c0000082c000000ca9a3bffffff7f
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -424,7 +424,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 0000000032250000f025000088260000a626000038270000ec290000ee29000000ca9a3bffffff7f
+    m_ExpandedIDs: 000000002a270000f027000088280000a62800004029000056290000062c0000082c000000ca9a3bffffff7f
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -451,7 +451,7 @@ MonoBehaviour:
   m_ListAreaState:
     m_SelectedInstanceIDs: 
     m_LastClickedInstanceID: 0
-    m_HadKeyboardFocusLastEvent: 1
+    m_HadKeyboardFocusLastEvent: 0
     m_ExpandedInstanceIDs: 
     m_RenameOverlay:
       m_UserAcceptedRename: 0

@@ -17,19 +17,28 @@ public class InputFieldManager : MonoBehaviour
 
         field = inputObj.GetComponent<InputField>();
 
+<<<<<<< HEAD:Utopia (develop)-수정/Assets/Script/HK/InputField.cs
+        /*
+        field.onValidateInput += delegate (string text, int charIndex, char addedChar)
+        {
+=======
         field.onValidateInput += delegate (string text, int charIndex, char addedChar) {
+>>>>>>> 368e95a39f11d4c4690a3518501779e2f02548d6:Utopia (develop)-수정/Assets/Script/HK/InputFieldManager.cs
             return changeUpperCase(addedChar);
         };
+        */
     }
 
     // Update is called once per frame
     void Update()
     {
         // 이건 스위치문으로 패스워드를 가려내면 될듯!
+        /*
         if (field.text == "003")
         {
             Debug.Log("성공");
         }
+        */
     }
 
     char changeUpperCase(char _cha)
