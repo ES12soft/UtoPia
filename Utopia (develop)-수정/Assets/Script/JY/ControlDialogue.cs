@@ -39,11 +39,15 @@ public class ControlDialogue : MonoBehaviour
 
     public int currentIndex;
 
+    EventManager EM;
+
+
     // Use this for initialization
   
 
     void Start()
     {
+        EM = FindObjectOfType<EventManager>();
         cntForAnimate = 0;
     }
 
