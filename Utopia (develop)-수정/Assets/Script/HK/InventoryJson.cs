@@ -21,7 +21,7 @@ public class InventoryJson : MonoBehaviour {
     void Start()
     {
         control = FindObjectOfType<InventoryControl>();
-
+        
         data = Resources.Load<TextAsset>(FileName);
         ConvertedData = JsonMapper.ToObject(data.text);     //Json 객체로 변환
 
@@ -33,7 +33,7 @@ public class InventoryJson : MonoBehaviour {
 
     }
 
-    public void Get_Item()
+    public void Use_Item()
     {
         
         if (control.isActive == false)                            
