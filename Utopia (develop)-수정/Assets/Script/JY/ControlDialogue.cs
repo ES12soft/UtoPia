@@ -39,11 +39,15 @@ public class ControlDialogue : MonoBehaviour
 
     public int currentIndex;
 
+    EventManager EM;
+
+
     // Use this for initialization
   
 
     void Start()
     {
+        EM = FindObjectOfType<EventManager>();
         cntForAnimate = 0;
     }
 
@@ -59,6 +63,7 @@ public class ControlDialogue : MonoBehaviour
                 currentIndex = 0;
                 isActive = false;
                 Debug.Log("끝");
+                EM.Event_Number++;
                 return;
             }
             else
@@ -117,10 +122,6 @@ public class ControlDialogue : MonoBehaviour
             TextForAnmiate = "";
             Dialogue_Text.text = "";
             Name_Text.text = "";
-
-///            Stand_Image.color = new Color(Stand_Image.color.r, Stand_Image.color.g, Stand_Image.color.b, 0);
-            
-   ///         Panel_Image.color = new Color(Stand_Image.color.r, Stand_Image.color.g, Stand_Image.color.b, 0);
             currentIndex = 0;
             cntForAnimate = 0;
 
@@ -129,6 +130,23 @@ public class ControlDialogue : MonoBehaviour
     }
 
     public void LodaJSON(JsonData ConvertedData_of_Object, bool WaitForClick, bool DestroyActivated)                                  //객체와 상호작용할때마다 호출되는 함수 (해당 객체의 JSON을 로드함)
+    {
+        currentIndex = 0;
+
+        isActive = true;
+
+        isScriptEnd = false;
+
+        ConvertedData = ConvertedData_of_Object;
+
+        TextForAnmiate = "";
+        Dialogue_Text.text = "";
+
+        End_of_Line = ConvertedData["dialogues"].Count - 1;
+
+        Debug.Log(currentIndex);
+    }
+    public void LodaJSON(JsonData ConvertedData_of_Object)                                  //객체와 상호작용할때마다 호출되는 함수 (해당 객체의 JSON을 로드함)
     {
         currentIndex = 0;
 
