@@ -21,7 +21,7 @@ public class InventoryControl : MonoBehaviour {
 
     public GameObject SetChat;
 
-    public bool isActive = false;           // 아이템 획득 true이면 실행, flase이면 종료
+    public bool isActive = false;           // true이면 획득, flase이면 사용
 
     public JsonData ConvertedData;          //Json의 객체로, 캐릭터의 이름, 대사, 이미지의 상태 정보
 
@@ -37,10 +37,11 @@ public class InventoryControl : MonoBehaviour {
     {
         if (isActive)
         {
+            SetChat.gameObject.SetActive(true);
 
-            Name_Text.text = ConvertedData["Item"][0]["Item_Name"].ToString();
-            Item_Text.text = ConvertedData["Item"][0]["Item_Text"].ToString();
-            ImageString = ConvertedData["Item"][0]["Item_Image"].ToString();
+            Name_Text.text = ConvertedData["Item"][currentIndex]["Item_Name"].ToString();
+            Item_Text.text = ConvertedData["Item"][currentIndex]["Item_Text"].ToString();
+            ImageString = ConvertedData["Item"][currentIndex]["Item_Image"].ToString();
 
             Item_Image.sprite = Resources.Load<Sprite>(ImageString);
             Item_Image.color = new Color(Item_Image.color.r, Item_Image.color.g, Item_Image.color.b, 255);
