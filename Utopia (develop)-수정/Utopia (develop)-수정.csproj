@@ -101,11 +101,10 @@
     <Compile Include="Assets\Script\JY\EventManager.cs" />
     <Compile Include="Assets\Script\SB\CameraFollow.cs" />
     <Compile Include="Assets\Script\SB\MazePlayerMovement.cs" />
-    <Compile Include="Assets\Script\SB\NewBehaviourScript.cs" />
     <Compile Include="Assets\Script\SB\PlayerControl.cs" />
+    <Compile Include="Assets\Script\SB\RoomWindow.cs" />
     <Compile Include="Assets\Script\SB\ScreenFader.cs" />
     <Compile Include="Assets\Script\SB\Warp.cs" />
-    <Compile Include="Assets\Script\SB\Window.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="GenerateTargetFrameworkMonikerAttribute" />
