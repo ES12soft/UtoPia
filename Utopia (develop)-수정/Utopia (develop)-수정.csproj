@@ -100,10 +100,6 @@
     <Compile Include="Assets\Script\JY\ActiveDialogue.cs" />
     <Compile Include="Assets\Script\JY\ControlDialogue.cs" />
     <Compile Include="Assets\Script\JY\EventManager.cs" />
-    <Compile Include="Assets\Script\JY\KeyPad_Puz.cs" />
-    <Compile Include="Assets\Script\JY\Keypad.cs" />
-    <Compile Include="Assets\Script\JY\MouseSetup.cs" />
-    <Compile Include="Assets\Script\JY\Trigger_Keypad.cs" />
     <Compile Include="Assets\Script\SB\CameraFollow.cs" />
     <Compile Include="Assets\Script\SB\Data.cs" />
     <Compile Include="Assets\Script\SB\MazePlayerMovement.cs" />

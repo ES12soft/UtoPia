@@ -64,7 +64,6 @@ public class ControlDialogue : MonoBehaviour
                 isActive = false;
                 Debug.Log("끝");
                 EM.Event_Number++;
-                EM.Doing_Event = false;
                 return;
             }
             else
@@ -77,7 +76,7 @@ public class ControlDialogue : MonoBehaviour
 
                 Stand_Image.sprite = Resources.Load<Sprite>(imagestring);
                 Stand_Image.color = new Color(Stand_Image.color.r, Stand_Image.color.g, Stand_Image.color.b, 255);
-                Panel_Image.color = new Color(Panel_Image.color.r, Panel_Image.color.g, Panel_Image.color.b,Panel_Image.color.a);
+                Panel_Image.color = new Color(Stand_Image.color.r, Stand_Image.color.g, Stand_Image.color.b, 255);
 
             }
 
