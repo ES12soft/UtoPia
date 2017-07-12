@@ -12,6 +12,9 @@ public class InputManager : MonoBehaviour
     public GameObject Inventory;
     //   public AudioSource audioSource;
 
+    string ClickName = "";
+    string CollisionName = "";
+
     //bool Interaction = false;
 
     void Update()
@@ -121,43 +124,32 @@ public class InputManager : MonoBehaviour
     {
 
         RaycastHit2D[] touches = Physics2D.RaycastAll(CurrentTouchPosition, CurrentTouchPosition, 0.5f);
-        Transform CheckTag = Physics2D.Raycast(CurrentTouchPosition, CurrentTouchPosition, 0.5f).transform;
 
         if (touches.Length > 1)
         {
             var obj = touches[0];
             var hit = touches[1];
 
-            if (obj.transform.name == "player" && hit.collider.tag == "Collision")
+            ChangeName("0_player", "Col");
+
+            if (obj.transform.name == ClickName && hit.collider.name == CollisionName)
             {
                 ///hit.transform.GetComponent<AudioSource>().Play();
                 Debug.Log("오브젝트 접촉완료");
-
-                //Interaction = true;
                 Destroy(obj.collider.gameObject);
-
-                //if (hit.transform.GetComponent<AudioSource>().isPlaying)
-                //    UnityEngine.SceneManagement.SceneManager.LoadScene("End");
-
-                //while (hit.transform.GetComponent<AudioSource>().isPlaying)
-                //{
-                //    Debug.Log("비트에 몸을맡겨");
-                //}
-
-                //if (!hit.transform.GetComponent<AudioSource>().isPlaying)
-                //Debug.Log("1" + hit.transform.GetComponent<AudioSource>().isPlaying.ToString());
-
             }
-
-            if (hit.collider.tag == "Others")
-                hit.transform.SetParent(Inventory.transform.Find("2_Grid"));
-
-            //Debug.Log("2" + hit.transform.GetComponent<AudioSource>().isPlaying.ToString());
         }
 
         else if (touches.Length <= 1)
             touches[0].transform.SetParent(Inventory.transform.Find("2_Grid"));
-
-        //Debug.Log("3" + touches[1].transform.GetComponent<AudioSource>().isPlaying.ToString());
     }
+
+    void ChangeName(string click, string col)
+    {
+
+        ClickName = click;
+        CollisionName = col;
+      
+    }
+    
 }
