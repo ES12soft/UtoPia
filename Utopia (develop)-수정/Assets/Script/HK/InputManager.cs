@@ -76,7 +76,7 @@ public class InputManager : MonoBehaviour
                 if (hit.transform != null && CheckTag.tag == "Item")
                 {
                     hit.transform.SetParent(Inventory.transform);
-                    hit.transform.GetComponent<AudioSource>().Play();
+                    ///hit.transform.GetComponent<AudioSource>().Play();
                     draggingItem = true;
                     draggedObject = hit.transform.gameObject;
                     touchOffset = (Vector2)hit.transform.position - inputPosition;          // 처음위치에 상대적으로 움직임
@@ -128,9 +128,9 @@ public class InputManager : MonoBehaviour
             var obj = touches[0];
             var hit = touches[1];
 
-            if (obj.transform.name == "0_GateCard" && hit.collider.tag == "Collision")
+            if (obj.transform.name == "player" && hit.collider.tag == "Collision")
             {
-                hit.transform.GetComponent<AudioSource>().Play();
+                ///hit.transform.GetComponent<AudioSource>().Play();
                 Debug.Log("오브젝트 접촉완료");
 
                 //Interaction = true;
