@@ -8,22 +8,24 @@ using UnityEngine;
 public class EventManager : MonoBehaviour
 {
     public Image fadeImage;
+    public GameObject fadeImage_;
     private bool isInTransition;
     private float transition;
     private bool isShowing;
     private float duration;
 
-    private ControlDialogue CD;
+    public ControlDialogue CD;
     private TextAsset Text_Data;
     private JsonData Json_Data;
 
     public int Event_Number=0;
     public int Event_Number_1=1;
 
+    public bool Doing_Event=true;
+
 	// Use this for initialization
 	void Start ()
     {
-        CD =  FindObjectOfType<ControlDialogue>();
 	}
 	
 	// Update is called once per frame
@@ -37,6 +39,7 @@ public class EventManager : MonoBehaviour
         if (!isInTransition)
             return;
 
+        fadeImage_.SetActive(true);
         transition += (isShowing) ? Time.deltaTime * (1 / duration) : -Time.deltaTime * (1 / duration);
         fadeImage.color = Color.Lerp(new Color(0, 0, 0, 0), Color.black, transition);
 
@@ -44,6 +47,9 @@ public class EventManager : MonoBehaviour
         {
             isInTransition = false;
             Event_Number++;
+            Doing_Event = false;
+            if (!isShowing)
+                fadeImage_.SetActive(false);
         }
         Debug.Log("페이드중");
     }
@@ -56,25 +62,27 @@ public class EventManager : MonoBehaviour
         transition = (isShowing) ? 0 : 1;
     }
 
-    public void EventList()
+    public void EventList()                                         //스테이지에 있을 이벤트리스트
     {
         if (Event_Number_1 == Event_Number)
+        {
             return;
+        }
         else
         {
             switch (Event_Number)
             {
                 case 0:
+                    Doing_Event = true;
                     Fade(false, 1.5f);
                     break;
                 case 1:
-                    Text_Data = Resources.Load<TextAsset>("Event_1");
+                    Doing_Event = true;
+                    Text_Data = Resources.Load<TextAsset>("Event1");
                     Json_Data = JsonMapper.ToObject(Text_Data.text);
                     CD.LodaJSON(Json_Data);
                     break;
-
                 case 2:
-                    Fade(true, 1.5f);
                     break;
                 default:
                     break;
