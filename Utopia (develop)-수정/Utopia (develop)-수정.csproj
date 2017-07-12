@@ -92,6 +92,7 @@
     <Compile Include="Assets\Script\HK\Inventory.cs" />
     <Compile Include="Assets\Script\HK\InventoryControl.cs" />
     <Compile Include="Assets\Script\HK\InventoryJson.cs" />
+    <Compile Include="Assets\Script\HK\Item.cs" />
     <Compile Include="Assets\Script\HK\MainScript.cs" />
     <Compile Include="Assets\Script\HK\MouseCursor.cs" />
     <Compile Include="Assets\Script\HK\UIManager.cs" />
@@ -104,6 +105,7 @@
     <Compile Include="Assets\Script\JY\MouseSetup.cs" />
     <Compile Include="Assets\Script\JY\Trigger_Keypad.cs" />
     <Compile Include="Assets\Script\SB\CameraFollow.cs" />
+    <Compile Include="Assets\Script\SB\Data.cs" />
     <Compile Include="Assets\Script\SB\MazePlayerMovement.cs" />
     <Compile Include="Assets\Script\SB\PlayerControl.cs" />
     <Compile Include="Assets\Script\SB\RoomWindow.cs" />
