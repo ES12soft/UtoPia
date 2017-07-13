@@ -12,11 +12,6 @@ public class InputManager : MonoBehaviour
     public GameObject Inventory;
     //   public AudioSource audioSource;
 
-    string ClickName = "";
-    string CollisionName = "";
-
-    //bool Interaction = false;
-
     void Update()
     {
         // 입력이 있다면, 이동
@@ -99,18 +94,6 @@ public class InputManager : MonoBehaviour
         }
     }
 
-    //public AudioSource Audio
-    //{
-    //    get
-    //    {
-    //        return audio;
-    //    }
-
-    //    set
-    //    {
-    //        audio = value;
-    //    }
-    //}
 
 
     // 가져온 항목을 해제
@@ -120,9 +103,10 @@ public class InputManager : MonoBehaviour
         draggedObject.transform.localScale = new Vector3(1, 1, 1);         // 드래그가 끝났으니 원래대로 스케일 변경
     }
 
+    // 스테이지마다 구분 필요할 듯 (if가 너무 많아짐)
     void RayCollision()
     {
-
+        /*
         RaycastHit2D[] touches = Physics2D.RaycastAll(CurrentTouchPosition, CurrentTouchPosition, 0.5f);
 
         if (touches.Length > 1)
@@ -142,14 +126,39 @@ public class InputManager : MonoBehaviour
 
         else if (touches.Length <= 1)
             touches[0].transform.SetParent(Inventory.transform.Find("2_Grid"));
+            */
+
+        if(Coliision("0_player", "Col"))
+        {
+            Debug.Log("오브젝트 접촉");
+        }
     }
 
-    void ChangeName(string click, string col)
-    {
-
-        ClickName = click;
-        CollisionName = col;
-      
-    }
     
+    bool Coliision(string ClickObjName, string CollisionObjName)
+    {
+        RaycastHit2D[] touches = Physics2D.RaycastAll(CurrentTouchPosition, CurrentTouchPosition, 0.5f);
+
+        if (touches.Length > 1)
+        {
+            var obj = touches[0];
+            var hit = touches[1];
+
+            //ChangeName("0_player", "Col");
+
+            if (obj.transform.name == ClickObjName && hit.collider.name == CollisionObjName)
+            {
+                ///hit.transform.GetComponent<AudioSource>().Play();
+                //Debug.Log("오브젝트 접촉완료");
+                Destroy(obj.collider.gameObject);
+                return true;
+            }
+        }
+
+        else if (touches.Length <= 1)
+            touches[0].transform.SetParent(Inventory.transform.Find("2_Grid"));
+
+
+        return false;
+    }
 }
