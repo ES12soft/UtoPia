@@ -17,11 +17,14 @@ public class RoomWindow : MonoBehaviour {
     bool PutDreamCatcher = false;
     //창문 상태 : 1.비오는날, 2.맑은날, 3.커튼을 걷음(밤)
     public int Window_State = 1;
+<<<<<<< HEAD
     //별가루를 얻음:1, 아직못얻음:2
     public int GetStarPowder = 2;
     //모이를 채운 새장을 놓음:1, 안놓은상태:2
     //public int PutBirdcage = 2;
 
+=======
+>>>>>>> 126915e147914a57288cd3865da837c76b21ab1c
 
     public void Window_State_Change()
     {
@@ -70,6 +73,7 @@ public class RoomWindow : MonoBehaviour {
         }
     }
 
+<<<<<<< HEAD
     void CheckStarPowderGet()
     {
         //별가루 얻음
@@ -97,24 +101,35 @@ public class RoomWindow : MonoBehaviour {
     }
 
 
+=======
+>>>>>>> 126915e147914a57288cd3865da837c76b21ab1c
     void WindowSetActive()
     {
        
         switch(Window_State)
         {
+<<<<<<< HEAD
             //비오는날
+=======
+>>>>>>> 126915e147914a57288cd3865da837c76b21ab1c
             case 1:
                 RainWindow.SetActive(true);
                 CleanWindow.SetActive(false);
                 DarkWindow.SetActive(false);
                 break;
+<<<<<<< HEAD
             //맑은날
+=======
+>>>>>>> 126915e147914a57288cd3865da837c76b21ab1c
             case 2:
                 RainWindow.SetActive(false);
                 CleanWindow.SetActive(true);
                 DarkWindow.SetActive(false);
                 break;
+<<<<<<< HEAD
             //밤
+=======
+>>>>>>> 126915e147914a57288cd3865da837c76b21ab1c
             case 3:
                 RainWindow.SetActive(false);
                 CleanWindow.SetActive(false);
@@ -126,6 +141,7 @@ public class RoomWindow : MonoBehaviour {
 
         switch(Curtain_State)
         {
+<<<<<<< HEAD
             //커튼 닫힘
             case 1:
                 CurtainClose.SetActive(true);
@@ -135,6 +151,15 @@ public class RoomWindow : MonoBehaviour {
             case 2:
                 CurtainClose.SetActive(false);
                 //StarPowder.SetActive(false);
+=======
+            case 1:
+                CurtainClose.SetActive(true);
+                StarPowder.SetActive(true);
+                break;
+            case 2:
+                CurtainClose.SetActive(false);
+                StarPowder.SetActive(false);
+>>>>>>> 126915e147914a57288cd3865da837c76b21ab1c
                 break;
         }
     }
@@ -147,6 +172,10 @@ public class RoomWindow : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
         WindowSetActive();
+<<<<<<< HEAD
         CheckStarPowderGet();
     }
+=======
+	}
+>>>>>>> 126915e147914a57288cd3865da837c76b21ab1c
 }
