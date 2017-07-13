@@ -17,6 +17,11 @@ public class RoomWindow : MonoBehaviour {
     bool PutDreamCatcher = false;
     //창문 상태 : 1.비오는날, 2.맑은날, 3.커튼을 걷음(밤)
     public int Window_State = 1;
+    //별가루를 얻음:1, 아직못얻음:2
+    public int GetStarPowder = 2;
+    //모이를 채운 새장을 놓음:1, 안놓은상태:2
+    //public int PutBirdcage = 2;
+
 
     public void Window_State_Change()
     {
@@ -65,21 +70,51 @@ public class RoomWindow : MonoBehaviour {
         }
     }
 
+    void CheckStarPowderGet()
+    {
+        //별가루 얻음
+        if (GetStarPowder == 1)
+        {
+            StarPowder.SetActive(false);
+        }
+        //별가루 못 얻음
+        else if (GetStarPowder == 2)
+        {
+            if(Curtain_State==1)
+                StarPowder.SetActive(true);
+            else if(Curtain_State==2)
+                StarPowder.SetActive(false);
+        }
+    }
+    public void GetStarpowder()
+    {
+        GetStarPowder = 1;
+    }
+
+    bool CheckPutBirdcage()
+    {
+        if()
+    }
+
+
     void WindowSetActive()
     {
        
         switch(Window_State)
         {
+            //비오는날
             case 1:
                 RainWindow.SetActive(true);
                 CleanWindow.SetActive(false);
                 DarkWindow.SetActive(false);
                 break;
+            //맑은날
             case 2:
                 RainWindow.SetActive(false);
                 CleanWindow.SetActive(true);
                 DarkWindow.SetActive(false);
                 break;
+            //밤
             case 3:
                 RainWindow.SetActive(false);
                 CleanWindow.SetActive(false);
@@ -91,13 +126,15 @@ public class RoomWindow : MonoBehaviour {
 
         switch(Curtain_State)
         {
+            //커튼 닫힘
             case 1:
                 CurtainClose.SetActive(true);
-                StarPowder.SetActive(true);
+                //StarPowder.SetActive(true);
                 break;
+            //커튼 열림
             case 2:
                 CurtainClose.SetActive(false);
-                StarPowder.SetActive(false);
+                //StarPowder.SetActive(false);
                 break;
         }
     }
@@ -110,5 +147,6 @@ public class RoomWindow : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
         WindowSetActive();
-	}
+        CheckStarPowderGet();
+    }
 }
