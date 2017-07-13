@@ -23,6 +23,8 @@
     },
     {
       "Item_Number":3,
+<<<<<<< HEAD
+=======
       "Item_Name":"HeadGearManual",
       "Item_Place":"Main",
       "Item_Image":"Nothing",
@@ -30,13 +32,18 @@
     },
     {
       "Item_Number":4,
+>>>>>>> 126915e147914a57288cd3865da837c76b21ab1c
       "Item_Name":"Cable_1",
       "Item_Place":"Main",
       "Item_Image":"Nothing",
       "Item_Text":"헤드기어에 연결할 1번 케이블"
     },
     {
+<<<<<<< HEAD
+      "Item_Number":4,
+=======
       "Item_Number":5,
+>>>>>>> 126915e147914a57288cd3865da837c76b21ab1c
       "Item_Name":"Cable_2",
       "Item_Place":"Main",
       "Item_Image":"Nothing",

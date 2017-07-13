@@ -14,7 +14,11 @@ public class InputFieldManager : MonoBehaviour
     void Start()
     {
 
+<<<<<<< HEAD
+        GameObject inputObj = GameObject.Find("InputField");
+=======
         GameObject inputObj = GameObject.Find("0_InputField");
+>>>>>>> 126915e147914a57288cd3865da837c76b21ab1c
 
         field = inputObj.GetComponent<InputField>();
         
