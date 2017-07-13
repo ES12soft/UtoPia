@@ -74,7 +74,7 @@
      <Compile Include="Assets\Script\SB\ScreenFader.cs" />
      <Compile Include="Assets\Script\SB\Warp.cs" />
  <Reference Include="Facebook.Unity.Settings">
- <HintPath>C:/Users/ge60/Desktop/HK/UtoPia-851417feb09b0da85cb46417a6c56144a26949b4/Utopia (develop)-수정/Library/FacebookSDK/Facebook.Unity.Settings.dll</HintPath>
+ <HintPath>D:/homeES12work/Utopia (develop)-수정/Library/FacebookSDK/Facebook.Unity.Settings.dll</HintPath>
  </Reference>
  <Reference Include="UnityEngine.UI">
  <HintPath>D:/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
@@ -98,7 +98,7 @@
  <HintPath>D:/Unity/Editor/Data/UnityExtensions/Unity/UnityVR/RuntimeEditor/UnityEngine.VR.dll</HintPath>
  </Reference>
  <Reference Include="LitJson">
- <HintPath>C:/Users/ge60/Desktop/HK/UtoPia-851417feb09b0da85cb46417a6c56144a26949b4/Utopia (develop)-수정/Assets/Resources/LitJson.dll</HintPath>
+ <HintPath>D:/homeES12work/Utopia (develop)-수정/Assets/Resources/LitJson.dll</HintPath>
  </Reference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
