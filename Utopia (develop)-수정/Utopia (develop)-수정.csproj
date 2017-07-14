@@ -102,7 +102,9 @@
     <Compile Include="Assets\Script\JY\EventManager.cs" />
     <Compile Include="Assets\Script\JY\KeyPad_Puz.cs" />
     <Compile Include="Assets\Script\JY\Keypad.cs" />
+    <Compile Include="Assets\Script\JY\LogicPuzzle.cs" />
     <Compile Include="Assets\Script\JY\MouseSetup.cs" />
+    <Compile Include="Assets\Script\JY\Tile.cs" />
     <Compile Include="Assets\Script\JY\Trigger_Keypad.cs" />
     <Compile Include="Assets\Script\SB\CameraFollow.cs" />
     <Compile Include="Assets\Script\SB\Data.cs" />
