@@ -33,14 +33,14 @@
       "Item_Name":"Cable_1",
       "Item_Place":"Main",
       "Item_Image":"Nothing",
-      "Item_Text":"헤드기어에 연결할 1번 케이블"
+      "Item_Text":"헤드기어에 연결할 작은 1번 케이블"
     },
     {
       "Item_Number":5,
       "Item_Name":"Cable_2",
       "Item_Place":"Main",
       "Item_Image":"Nothing",
-      "Item_Text":"헤드기어에 연결할 2번 케이블"
+      "Item_Text":"헤드기어에 연결할 큰 2번 케이블"
     }
   ]
 }
