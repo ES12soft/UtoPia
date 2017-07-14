@@ -21,7 +21,7 @@ public class EventManager : MonoBehaviour
     public int Event_Number=0;
     public int Event_Number_1=1;
 
-    public bool Doing_Event=true;
+    public bool Doing_Event=false;
 
 	// Use this for initialization
 	void Start ()
@@ -72,18 +72,7 @@ public class EventManager : MonoBehaviour
         {
             switch (Event_Number)
             {
-                case 0:
-                    Doing_Event = true;
-                    Fade(false, 1.5f);
-                    break;
-                case 1:
-                    Doing_Event = true;
-                    Text_Data = Resources.Load<TextAsset>("Event1");
-                    Json_Data = JsonMapper.ToObject(Text_Data.text);
-                    CD.LodaJSON(Json_Data);
-                    break;
-                case 2:
-                    break;
+
                 default:
                     break;
             }
