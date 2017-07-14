@@ -70,7 +70,11 @@ MonoBehaviour:
   m_MinSize: {x: 204, y: 342}
   m_MaxSize: {x: 4004, y: 8042}
   vertical: 1
+<<<<<<< HEAD
   controlID: 59
+=======
+  controlID: 70
+>>>>>>> 040e468cfcb9074a47c2883c401bbef4966a3098
 --- !u!114 &4
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -140,7 +144,11 @@ MonoBehaviour:
   m_MinSize: {x: 917, y: 442}
   m_MaxSize: {x: 22012, y: 10021}
   vertical: 0
+<<<<<<< HEAD
   controlID: 166
+=======
+  controlID: 129
+>>>>>>> 040e468cfcb9074a47c2883c401bbef4966a3098
 --- !u!114 &7
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -184,7 +192,11 @@ MonoBehaviour:
   m_MinSize: {x: 202, y: 442}
   m_MaxSize: {x: 4002, y: 8042}
   vertical: 1
+<<<<<<< HEAD
   controlID: 167
+=======
+  controlID: 130
+>>>>>>> 040e468cfcb9074a47c2883c401bbef4966a3098
 --- !u!114 &9
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -203,8 +215,8 @@ MonoBehaviour:
     y: 0
     width: 204
     height: 485
-  m_MinSize: {x: 204, y: 221}
-  m_MaxSize: {x: 4004, y: 4021}
+  m_MinSize: {x: 200, y: 200}
+  m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 15}
   m_Panes:
   - {fileID: 15}
@@ -253,8 +265,8 @@ MonoBehaviour:
     y: 0
     width: 555
     height: 948
-  m_MinSize: {x: 277, y: 71}
-  m_MaxSize: {x: 4002, y: 4021}
+  m_MinSize: {x: 275, y: 50}
+  m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 16}
   m_Panes:
   - {fileID: 16}
@@ -363,10 +375,17 @@ MonoBehaviour:
     width: 200
     height: 464
   m_TreeViewState:
+<<<<<<< HEAD
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 08310000
     m_LastClickedID: 12552
     m_ExpandedIDs: 86f1ffff00000000
+=======
+    scrollPos: {x: 0, y: 60}
+    m_SelectedIDs: dc2f0000
+    m_LastClickedID: 12252
+    m_ExpandedIDs: 16f4ffff00000000fa2c0000ea2e00003e2f0000622f000058300000
+>>>>>>> 040e468cfcb9074a47c2883c401bbef4966a3098
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -415,7 +434,7 @@ MonoBehaviour:
     y: 99
     width: 553
     height: 927
-  m_ScrollPosition: {x: 0, y: 0}
+  m_ScrollPosition: {x: 0, y: 165.95508}
   m_InspectorMode: 0
   m_PreviewResizer:
     m_CachedPref: -160
@@ -465,6 +484,7 @@ MonoBehaviour:
   m_LastFolders:
   - Assets
   m_LastFoldersGridSize: -1
+<<<<<<< HEAD
   m_LastProjectPath: "C:\\Users\\B408-11\\Desktop\\work\\Utopia (develop)-\uC218\uC815"
   m_IsLocked: 0
   m_FolderTreeState:
@@ -472,6 +492,15 @@ MonoBehaviour:
     m_SelectedIDs: 082b0000
     m_LastClickedID: 11016
     m_ExpandedIDs: 00000000082b0000342b00007a2b0000da2b0000722c00008e3200009032000000ca9a3bffffff7f
+=======
+  m_LastProjectPath: "C:\\Users\\B408-12\\Desktop\\ES12_HK\\Utopia (develop)-\uC218\uC815"
+  m_IsLocked: 0
+  m_FolderTreeState:
+    scrollPos: {x: 0, y: 0}
+    m_SelectedIDs: f6280000
+    m_LastClickedID: 10486
+    m_ExpandedIDs: 00000000f62800002229000072290000d6290000942a0000f6300000f830000000ca9a3bffffff7f
+>>>>>>> 040e468cfcb9074a47c2883c401bbef4966a3098
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -499,7 +528,11 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
+<<<<<<< HEAD
     m_ExpandedIDs: 00000000082b0000342b00007a2b0000da2b0000722c00008e32000090320000
+=======
+    m_ExpandedIDs: 00000000f62800002229000072290000d6290000942a0000f6300000f8300000
+>>>>>>> 040e468cfcb9074a47c2883c401bbef4966a3098
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -610,7 +643,11 @@ MonoBehaviour:
       y: 17
       width: 817
       height: 424
+<<<<<<< HEAD
     m_Scale: {x: 0.5520833, y: 0.5520833}
+=======
+    m_Scale: {x: 0.39259258, y: 0.39259258}
+>>>>>>> 040e468cfcb9074a47c2883c401bbef4966a3098
     m_Translation: {x: 408.5, y: 212}
     m_MarginLeft: 0
     m_MarginRight: 0
@@ -618,10 +655,17 @@ MonoBehaviour:
     m_MarginBottom: 0
     m_LastShownAreaInsideMargins:
       serializedVersion: 2
+<<<<<<< HEAD
       x: -739.92456
       y: -384
       width: 1479.8491
       height: 768
+=======
+      x: -1040.5189
+      y: -540
+      width: 2081.0378
+      height: 1080
+>>>>>>> 040e468cfcb9074a47c2883c401bbef4966a3098
     m_MinimalGUI: 1
   m_defaultScale: 0.5520833
   m_TargetTexture: {fileID: 0}
